@@ -22,9 +22,7 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>so', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]], opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'v', '<C-f>', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
-
 end
 
 -- nvim-cmp supports additional completion capabilities
@@ -32,7 +30,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'ccls', 'pyright', 'eslint' }
+local servers = { 'ccls', 'pyright', 'eslint', 'denols' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

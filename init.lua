@@ -10,4 +10,15 @@ for _, config in ipairs(lua_configs) do
     require(config)
 end
 
-require('plugins/*')
+local lua_plugin_configs = { 
+    'nvim_lsp', 
+    'nvim_cmp',
+    'telescope',
+    'nvim_treesitter',
+    'luasnip',
+    'gitsigns',
+    'lualine'
+}
+for _, p_config in ipairs(lua_plugin_configs) do
+    require('plugins/' .. p_config)
+end
