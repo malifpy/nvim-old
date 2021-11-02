@@ -73,6 +73,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    config = { "\27LJ\1\2_\0\0\3\0\5\0\n4\0\0\0%\1\1\0>\0\2\0027\0\2\0004\1\0\0%\2\3\0>\1\2\0027\1\4\1>\0\2\1G\0\1\0\topts\27alpha.themes.dashboard\nsetup\nalpha\frequire\0" },
+    loaded = true,
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/alpha-nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/auto-pairs"
@@ -96,6 +101,10 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/neoformat"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -166,6 +175,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for surround.nvim]], true)
 try_loadstring("\27LJ\1\2U\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\19mappings_style\rsurround\nsetup\rsurround\frequire\0", "config", "surround.nvim")
 time([[Config for surround.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\1\2_\0\0\3\0\5\0\n4\0\0\0%\1\1\0>\0\2\0027\0\2\0004\1\0\0%\2\3\0>\1\2\0027\1\4\1>\0\2\1G\0\1\0\topts\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")

@@ -18,8 +18,9 @@ Neovim configuration	README.md	/^# Neovim configuration $/;"	c
 [']m']	lua/plugins/nvim_treesitter.lua	/^        [']m'] = '@function.outer',$/;"	f
 ['af']	lua/plugins/nvim_treesitter.lua	/^        ['af'] = '@function.outer',$/;"	f
 ['if']	lua/plugins/nvim_treesitter.lua	/^        ['if'] = '@function.inner',$/;"	f
-config	lua/pluginList.lua	/^      config = function() require'nvim-tree'.setup {} end$/;"	f
-config	lua/pluginList.lua	/^      config = function()$/;"	f
+config	lua/pluginList.lua	/^        config = function ()$/;"	f
+config	lua/pluginList.lua	/^        config = function() $/;"	f
+config	lua/pluginList.lua	/^        config = function() require'nvim-tree'.setup {} end$/;"	f
 error_msg	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
 expand	lua/plugins/nvim_cmp.lua	/^    expand = function(args)$/;"	f
 on_attach	lua/plugins/nvim_lsp.lua	/^local on_attach = function(_, bufnr)$/;"	f

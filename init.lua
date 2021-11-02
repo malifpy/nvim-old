@@ -11,13 +11,14 @@ for _, config in ipairs(lua_configs) do
 end
 
 local lua_plugin_configs = { 
+    'luasnip',
     'nvim_lsp', 
     'nvim_cmp',
     'telescope',
     'nvim_treesitter',
-    'luasnip',
     'gitsigns',
-    'lualine'
+    'lualine',
+    'alpha_nvim'
 }
 for _, p_config in ipairs(lua_plugin_configs) do
     require('plugins/' .. p_config)
