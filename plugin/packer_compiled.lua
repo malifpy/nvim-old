@@ -71,102 +71,137 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/LuaSnip"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["alpha-nvim"] = {
     config = { "\27LJ\1\2_\0\0\3\0\5\0\n4\0\0\0%\1\1\0>\0\2\0027\0\2\0004\1\0\0%\2\3\0>\1\2\0027\1\4\1>\0\2\1G\0\1\0\topts\27alpha.themes.dashboard\nsetup\nalpha\frequire\0" },
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/alpha-nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
   },
   ["auto-pairs"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/auto-pairs"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neoformat = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/neoformat"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/onedark.vim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/onedark.vim",
+    url = "https://github.com/joshdick/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["surround.nvim"] = {
     config = { "\27LJ\1\2U\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\19mappings_style\rsurround\nsetup\rsurround\frequire\0" },
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/surround.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/surround.nvim",
+    url = "https://github.com/blackCauldron7/surround.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-commentary"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-gutentags"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-gutentags"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-gutentags",
+    url = "https://github.com/ludovicchabant/vim-gutentags"
   },
   ["vim-rhubarb"] = {
     loaded = true,
-    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
+    url = "https://github.com/tpope/vim-rhubarb"
+  },
+  ["which-key.nvim"] = {
+    config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14which-key\frequire\0" },
+    loaded = true,
+    path = "/home/malifpy/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
@@ -175,6 +210,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for surround.nvim]], true)
 try_loadstring("\27LJ\1\2U\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\1\19mappings_style\rsurround\nsetup\rsurround\frequire\0", "config", "surround.nvim")
 time([[Config for surround.nvim]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\1\2_\0\0\3\0\5\0\n4\0\0\0%\1\1\0>\0\2\0027\0\2\0004\1\0\0%\2\3\0>\1\2\0027\1\4\1>\0\2\1G\0\1\0\topts\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")

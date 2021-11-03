@@ -14,6 +14,7 @@ require('packer').startup(function()
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     -- Colorscheme
     use 'joshdick/onedark.vim'
+    use 'folke/tokyonight.nvim'
     -- Statusline
     use {
         'nvim-lualine/lualine.nvim',
@@ -36,7 +37,7 @@ require('packer').startup(function()
     -- Snippets
     use 'L3MON4D3/LuaSnip'
     -- Auto pairs brackets
-    use 'jiangmiao/auto-pairs' -- Auto pairs brackets, quotes
+    use 'jiangmiao/auto-pairs' 
     -- File tree
     use {
         'kyazdani42/nvim-tree.lua',
@@ -59,6 +60,17 @@ require('packer').startup(function()
         config = function ()
             require'alpha'.setup(require'alpha.themes.dashboard'.opts)
         end
+    }
+    -- Key bindings popup
+    use {
+      "folke/which-key.nvim",
+      config = function()
+        require("which-key").setup {
+          -- your configuration comes here
+          -- or leave it empty to use the default settings
+          -- refer to the configuration section below
+        }
+      end
     }
 end
 )
