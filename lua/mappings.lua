@@ -21,14 +21,10 @@ vim.api.nvim_set_keymap('n', '<F5>', ':NvimTreeToggle<CR>', { noremap = true, si
 vim.api.nvim_set_keymap('n', '<leader>r', ':NvimTreeRefresh<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeFindFile<CR>', { noremap = true, silent = true })
 
--- Telescope leader shortcuts
-vim.api.nvim_set_keymap('n', '<leader><space>', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>sf', [[<cmd>lua require('telescope.builtin').find_files({previewer = false})<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>sb', [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>sh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>st', [[<cmd>lua require('telescope.builtin').tags()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>sd', [[<cmd>lua require('telescope.builtin').grep_string()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>sp', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>so', [[<cmd>lua require('telescope.builtin').tags{ only_current_buffer = true }<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>?', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader><Space>', "<cmd>lua require('fzf-lua').buffers()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gg', "<cmd>lua require('fzf-lua').grep()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>lg', "<cmd>lua require('fzf-lua').live_grep()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>rf', "<cmd>lua require('fzf-lua').lsp_references()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>df', "<cmd>lua require('fzf-lua').lsp_definitions()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>dc', "<cmd>lua require('fzf-lua').lsp_declarations()<CR>", { noremap = true, silent = true })

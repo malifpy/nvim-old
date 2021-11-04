@@ -1,3 +1,5 @@
+require('impatient').enable_profile()
+
 local lua_configs = { 
     'mappings', 
     'options',
@@ -14,11 +16,11 @@ local lua_plugin_configs = {
     'luasnip',
     'nvim_lsp', 
     'nvim_cmp',
-    'telescope',
+    -- 'telescope',
     'nvim_treesitter',
     'gitsigns',
     'lualine',
-    'alpha_nvim',
+    -- 'alpha_nvim',
     'nvim_tree'
 }
 for _, p_config in ipairs(lua_plugin_configs) do

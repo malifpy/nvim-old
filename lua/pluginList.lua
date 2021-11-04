@@ -6,14 +6,14 @@ require('packer').startup(function()
     use 'tpope/vim-fugitive'
     -- Fugitive-companion untuk berinteraksi dengan GitHub
     use 'tpope/vim-rhubarb'
-    -- "gc" untuk komen di visual region
+    -- Bulk comment
     use 'tpope/vim-commentary'
     -- Automatic tags management
     use 'ludovicchabant/vim-gutentags'
     -- UI to select things (files, grep results, open buffers...)
-    use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+    -- use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     -- Colorscheme
-    use 'joshdick/onedark.vim'
+    -- use 'joshdick/onedark.vim'
     use 'folke/tokyonight.nvim'
     -- Statusline
     use {
@@ -48,19 +48,19 @@ require('packer').startup(function()
     use {
         "blackCauldron7/surround.nvim",
         config = function() 
-            require"surround".setup {mappings_style = "surround"}
+            require'surround'.setup {mappings_style = 'sandwich'}
         end
     }
     -- Formatter
     use 'sbdchd/neoformat'
     -- Dashboard
-    use {
-        'goolord/alpha-nvim', 
-        requires = { 'kyazdani42/nvim-web-devicons' },
-        config = function ()
-            require'alpha'.setup(require'alpha.themes.dashboard'.opts)
-        end
-    }
+    -- use {
+    --     'goolord/alpha-nvim', 
+    --     requires = { 'kyazdani42/nvim-web-devicons' },
+    --     config = function ()
+    --         require'alpha'.setup(require'alpha.themes.dashboard'.opts)
+    --     end
+    -- }
     -- Key bindings popup
     use {
       "folke/which-key.nvim",
@@ -72,5 +72,17 @@ require('packer').startup(function()
         }
       end
     }
+
+    use { 'ibhagwan/fzf-lua',
+        requires = {
+            'vijaymarupudi/nvim-fzf',
+            'kyazdani42/nvim-web-devicons' 
+        } -- optional for icons
+    }
+    
+    -- Is using a standard Neovim install, i.e. built from source or using a
+    -- provided appimage.
+    use 'lewis6991/impatient.nvim'
+
 end
 )
