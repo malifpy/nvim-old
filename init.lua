@@ -20,7 +20,7 @@ local lua_plugin_configs = {
     'nvim_treesitter',
     'gitsigns',
     'lualine',
-    -- 'alpha_nvim',
+    'alpha_nvim',
     'nvim_tree'
 }
 for _, p_config in ipairs(lua_plugin_configs) do

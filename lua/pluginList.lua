@@ -34,6 +34,7 @@ require('packer').startup(function()
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'saadparwaiz1/cmp_luasnip'
+    use 'hrsh7th/cmp-buffer' 
     -- Snippets
     use 'L3MON4D3/LuaSnip'
     -- Auto pairs brackets
@@ -54,13 +55,13 @@ require('packer').startup(function()
     -- Formatter
     use 'sbdchd/neoformat'
     -- Dashboard
-    -- use {
-    --     'goolord/alpha-nvim', 
-    --     requires = { 'kyazdani42/nvim-web-devicons' },
-    --     config = function ()
-    --         require'alpha'.setup(require'alpha.themes.dashboard'.opts)
-    --     end
-    -- }
+    use {
+        'goolord/alpha-nvim', 
+        requires = { 'kyazdani42/nvim-web-devicons' },
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.opts)
+        end
+    }
     -- Key bindings popup
     use {
       "folke/which-key.nvim",
@@ -83,6 +84,7 @@ require('packer').startup(function()
     -- Is using a standard Neovim install, i.e. built from source or using a
     -- provided appimage.
     use 'lewis6991/impatient.nvim'
+    
 
 end
 )

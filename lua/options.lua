@@ -1,11 +1,17 @@
- --Incremental live completion (note: this is now a default on master)
+-- No line wrapping
+vim.o.wrap = false
+
+-- Keeps the cursor somewhat centered
+vim.o.scrolloff = 15
+
+--Incremental live completion (note: this is now a default on master)
 vim.o.inccommand = 'nosplit'
 
 --Set highlight on search
 vim.o.hlsearch = false
 
 --Make line numbers default
-vim.wo.number = true
+vim.wo.relativenumber = true
 
 --Do not save when switching buffers (note: this is now a default on master)
 vim.o.hidden = true
