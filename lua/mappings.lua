@@ -4,14 +4,16 @@ vim.api.nvim_set_keymap('v', '<C-c>', "\"+y", { noremap = true, silent = true })
 -- Paste from clipboard in insert mode
 vim.api.nvim_set_keymap('i', '<C-v>', "<Esc>\"+pa", { noremap = true, silent = true })
 
+-- Select All
+vim.api.nvim_set_keymap('n', '<C-a>', "gg<S-v><S-g>", { noremap = true, silent = true })
 --Remap space as leader key
 vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 --Remap for dealing with word wrap
--- vim.api.nvim_set_keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
--- vim.api.nvim_set_keymap('n', 'j', "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
+vim.api.nvim_set_keymap('n', 'j', "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
 -- vim.api.nvim_set_keymap('n', 'k', 'kzz', { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap('n', 'j', 'jzz', { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap('n', '<Up>', '<Up>zz', { noremap = true, silent = true })
