@@ -4,7 +4,12 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     -- Is using a standard Neovim install, i.e. built from source or using a
     -- provided appimage.
-    use 'lewis6991/impatient.nvim'
+    use {
+        'lewis6991/impatient.nvim',
+        config = function()
+            require('impatient').enable_profile()
+        end
+    }
     -- Git commands di nvim
     use 'tpope/vim-fugitive'
     -- Fugitive-companion untuk berinteraksi dengan GitHub
