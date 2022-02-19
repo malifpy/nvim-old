@@ -1,10 +1,10 @@
 require("packerInit")
 
 local use = require('packer').use
-require('packer').startup(function()
+require('packer').startup( function()
     -- Package Manager
     use 'wbthomason/packer.nvim'
-    
+
     -- Bulk comment
     use {
         'numToStr/Comment.nvim',
@@ -20,7 +20,9 @@ require('packer').startup(function()
             require'surround'.setup {mappings_style = 'sandwich'}
         end
     }
-
+    
+    -- Autoswitch Input 
+    use 'rlue/vim-barbaric'
 end
 )
 

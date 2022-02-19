@@ -2,8 +2,8 @@ local use = require('packer').use
 require('packer').startup(function()
     -- Package Manager
     use 'wbthomason/packer.nvim'
-    -- Is using a standard Neovim install, i.e. built from source or using a
-    -- provided appimage.
+    
+    use 'rlue/vim-barbaric'
     -- Git commands di nvim
     use 'tpope/vim-fugitive'
     -- Fugitive-companion untuk berinteraksi dengan GitHub
@@ -81,16 +81,16 @@ require('packer').startup(function()
     --     end
     -- }
     -- Key bindings popup
-    use {
-      'folke/which-key.nvim',
-      config = function()
-        require('which-key').setup {
-          -- your configuration comes here
-          -- or leave it empty to use the default settings
-          -- refer to the configuration section below
-        }
-      end
-    }
+    -- use {
+    --   'folke/which-key.nvim',
+    --   config = function()
+    --     require('which-key').setup {
+    --       -- your configuration comes here
+    --       -- or leave it empty to use the default settings
+    --       -- refer to the configuration section below
+    --     }
+    --   end
+    -- }
 
     use { 'ibhagwan/fzf-lua',
         requires = {
