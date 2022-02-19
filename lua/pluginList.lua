@@ -3,20 +3,20 @@ require('packer').startup(function()
     -- Package Manager
     use 'wbthomason/packer.nvim'
     
-    use 'rlue/vim-barbaric'
+    -- use 'rlue/vim-barbaric'
     -- Git commands di nvim
-    use 'tpope/vim-fugitive'
+    -- use 'tpope/vim-fugitive'
     -- Fugitive-companion untuk berinteraksi dengan GitHub
-    use 'tpope/vim-rhubarb'
+    -- use 'tpope/vim-rhubarb'
     -- Bulk comment
-    use {
-        'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    }
+    -- use {
+    --     'numToStr/Comment.nvim',
+    --     config = function()
+    --         require('Comment').setup()
+    --     end
+    -- }
     -- Automatic tags management
-    use 'ludovicchabant/vim-gutentags'
+    -- use 'ludovicchabant/vim-gutentags'
     -- Colorscheme
     -- use 'joshdick/onedark.vim'
     use 'folke/tokyonight.nvim'
@@ -27,9 +27,9 @@ require('packer').startup(function()
         config = function() require 'plugins/lualine' end
     }
     -- Add indentation guides even on blank lines
-    use 'lukas-reineke/indent-blankline.nvim'
+    -- use 'lukas-reineke/indent-blankline.nvim'
     -- Add git related info in the signs columns and popups
-    use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+    -- use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     -- Highlight, edit, and navigate code using a fast incremental parsing library
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -53,7 +53,7 @@ require('packer').startup(function()
     -- Snippets
     use 'L3MON4D3/LuaSnip'
     -- Auto pairs brackets
-    use 'jiangmiao/auto-pairs' 
+    -- use 'jiangmiao/auto-pairs' 
     -- File tree
     use {
         'kyazdani42/nvim-tree.lua',
@@ -61,17 +61,29 @@ require('packer').startup(function()
         config = function() require'plugins/nvim_tree' end
     }
     -- Surround
-    use {
-        'blackCauldron7/surround.nvim',
-        config = function() 
-            require'surround'.setup {mappings_style = 'sandwich'}
+    -- use {
+    --     'blackCauldron7/surround.nvim',
+    --     config = function() 
+    --         require'surround'.setup {mappings_style = 'sandwich'}
+    --     end
+    -- }
+    use { 
+        'echasnovski/mini.nvim', 
+        config = function()
+            require "mini.comment".setup()
+            require "mini.fuzzy".setup()
+            require "mini.indentscope".setup({})
+            require "mini.pairs".setup()
+            require "mini.surround".setup()
         end
     }
+
     -- Formatter
-    use {
-        'lukas-reineke/format.nvim',
-        config = function() require 'plugins/format_nvim' end
-    }
+    -- use {
+    --     'lukas-reineke/format.nvim',
+    --     config = function() require 'plugins/format_nvim' end
+    -- }
+
     -- -- Dashboard
     -- use {
     --     'goolord/alpha-nvim', 
@@ -92,12 +104,12 @@ require('packer').startup(function()
     --   end
     -- }
 
-    use { 'ibhagwan/fzf-lua',
-        requires = {
-            'vijaymarupudi/nvim-fzf',
-            'kyazdani42/nvim-web-devicons'
-        } -- optional for icons
-    }
+    -- use { 'ibhagwan/fzf-lua',
+    --     requires = {
+    --         'vijaymarupudi/nvim-fzf',
+    --         'kyazdani42/nvim-web-devicons'
+    --     } -- optional for icons
+    -- }
     
     -- use {
     --     'nvim-telescope/telescope.nvim',
