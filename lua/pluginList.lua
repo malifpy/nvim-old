@@ -21,15 +21,15 @@ require('packer').startup(function()
     -- use 'joshdick/onedark.vim'
     use 'folke/tokyonight.nvim'
     -- Statusline
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = {'kyazdani42/nvim-web-devicons', opt = true},
-        config = function() require 'plugins/lualine' end
-    }
+    -- use {
+    --     'nvim-lualine/lualine.nvim',
+    --     requires = {'kyazdani42/nvim-web-devicons', opt = true},
+    --     config = function() require 'plugins/lualine' end
+    -- }
     -- Add indentation guides even on blank lines
     -- use 'lukas-reineke/indent-blankline.nvim'
     -- Add git related info in the signs columns and popups
-    -- use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+    use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     -- Highlight, edit, and navigate code using a fast incremental parsing library
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -70,11 +70,7 @@ require('packer').startup(function()
     use { 
         'echasnovski/mini.nvim', 
         config = function()
-            require "mini.comment".setup()
-            require "mini.fuzzy".setup()
-            require "mini.indentscope".setup({})
-            require "mini.pairs".setup()
-            require "mini.surround".setup()
+            require "plugins/mini_nvim"
         end
     }
 
