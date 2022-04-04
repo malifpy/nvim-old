@@ -31,12 +31,14 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
 local servers = { 
-    'ccls', 
-    'pyright', 
-    'eslint', 
-    'denols', 
-    'gopls', 
-    'rls' 
+    "clangd", 
+    "pylsp", 
+    "eslint", 
+    "denols", 
+    "gopls", 
+    "rls",
+    "hls",
+    "metals"
 }
 
 for _, lsp in ipairs(servers) do

@@ -1,6 +1,1 @@
-require "mini.comment".setup()
-require "mini.fuzzy".setup()
 require "mini.indentscope".setup({})
-require "mini.pairs".setup()
-require "mini.statusline".setup()
-require "mini.surround".setup()
