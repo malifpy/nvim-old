@@ -12,7 +12,7 @@ git -C $HOME/.config clone git@github.com:malifpy/nvim.git
  - [`fzf`](https://archlinux.org/packages/community/x86_64/fzf/) for `ibhagwan/fzf-lua`
  - [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/) idk who needed it
 
-### Languange Servers
+### Language Servers
 
  - [clangd](https://clangd.llvm.org/installation.html)
  - [pylsp](https://github.com/python-lsp/python-lsp-server)
