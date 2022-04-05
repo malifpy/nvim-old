@@ -27,7 +27,10 @@ require('packer').startup(function()
         config = function() require 'plugins/lualine' end
     }
     -- Add git related info in the signs columns and popups
-    use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+    use { 
+        'lewis6991/gitsigns.nvim', 
+        config = function() require 'plugins/gitsigns' end
+    }
     -- Highlight, edit, and navigate code using a fast incremental parsing library
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -84,26 +87,6 @@ require('packer').startup(function()
         config = function() require 'plugins/format_nvim' end
     }
 
-    -- -- Dashboard
-    -- use {
-    --     'goolord/alpha-nvim', 
-    --     requires = { 'kyazdani42/nvim-web-devicons' },
-    --     config = function ()
-    --         require'plugins/alpha_nvim'
-    --     end
-    -- }
-    -- Key bindings popup
-    -- use {
-    --   'folke/which-key.nvim',
-    --   config = function()
-    --     require('which-key').setup {
-    --       -- your configuration comes here
-    --       -- or leave it empty to use the default settings
-    --       -- refer to the configuration section below
-    --     }
-    --   end
-    -- }
-
     use { 'ibhagwan/fzf-lua',
         requires = {
             'vijaymarupudi/nvim-fzf',
@@ -111,14 +94,5 @@ require('packer').startup(function()
         } -- optional for icons
     }
 
-    -- use 'github/copilot.vim'
-   
-    -- use {
-    --     'nvim-telescope/telescope.nvim',
-    --     requires = { {'nvim-lua/plenary.nvim'} },
-    --     config = function() require('telescope').load_extension('fzy_native') end
-    -- }
-    -- 
-    -- use 'nvim-telescope/telescope-fzy-native.nvim'
 end
 )

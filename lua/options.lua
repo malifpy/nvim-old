@@ -1,5 +1,5 @@
 -- No line wrapping
-vim.o.wrap = false
+vim.o.wrap = true
 
 -- Keeps the cursor somewhat centered
 vim.o.scrolloff = 15
