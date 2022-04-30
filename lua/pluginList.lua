@@ -11,6 +11,7 @@ require('packer').startup(function()
     -- Bulk comment
     use {
         'numToStr/Comment.nvim',
+        tag = 'v0.6',
         config = function()
             require('Comment').setup()
         end
@@ -50,7 +51,7 @@ require('packer').startup(function()
     }
     use 'hrsh7th/cmp-nvim-lsp'
     use 'saadparwaiz1/cmp_luasnip'
-    use 'hrsh7th/cmp-buffer' 
+    use 'hrsh7th/cmp-buffer'
     -- Snippets
     use 'L3MON4D3/LuaSnip'
     -- Auto pairs brackets
