@@ -19,8 +19,7 @@ require('packer').startup(function()
     -- Automatic tags management
     use 'ludovicchabant/vim-gutentags'
     -- Colorscheme
-    -- use 'joshdick/onedark.vim'
-    use 'folke/tokyonight.nvim'
+    use 'joshdick/onedark.vim'
     -- Statusline
     use {
         'nvim-lualine/lualine.nvim',
