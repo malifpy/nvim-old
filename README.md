@@ -10,7 +10,7 @@ git -C $HOME/.config clone git@github.com:malifpy/nvim.git
 
  - [`xclip`](https://archlinux.org/packages/extra/x86_64/xclip/) for clipboard on X11
  - [`fzf`](https://archlinux.org/packages/community/x86_64/fzf/) for `ibhagwan/fzf-lua`
- - [Nerd Fonts DejaVu Complete](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/) idk who needed it
+ - [Nerd Fonts] Icons.
 
 ### Language Servers
 

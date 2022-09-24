@@ -11,7 +11,6 @@ require('packer').startup(function()
     -- Bulk comment
     use {
         'numToStr/Comment.nvim',
-        tag = 'v0.6',
         config = function()
             require('Comment').setup()
         end
@@ -80,13 +79,11 @@ require('packer').startup(function()
             require 'plugins/mini_nvim'
         end
     }
-
     -- Formatter
     use {
         'lukas-reineke/format.nvim',
         config = function() require 'plugins/format_nvim' end
     }
-
     use { 'ibhagwan/fzf-lua',
         requires = {
             'vijaymarupudi/nvim-fzf',
