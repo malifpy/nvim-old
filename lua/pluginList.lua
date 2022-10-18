@@ -47,6 +47,7 @@ require('packer').startup(function()
         'hrsh7th/nvim-cmp',
         config = function() require 'plugins/nvim_cmp' end
     }
+    use 'kyazdani42/nvim-web-devicons'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'saadparwaiz1/cmp_luasnip'
     use 'hrsh7th/cmp-buffer'
@@ -84,9 +85,9 @@ require('packer').startup(function()
         'lukas-reineke/format.nvim',
         config = function() require 'plugins/format_nvim' end
     }
+
     use { 'ibhagwan/fzf-lua',
         requires = {
-            'vijaymarupudi/nvim-fzf',
             'kyazdani42/nvim-web-devicons'
         } -- optional for icons
     }
