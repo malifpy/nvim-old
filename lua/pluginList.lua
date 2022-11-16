@@ -16,7 +16,10 @@ require('packer').startup(function()
         end
     }
     -- Automatic tags management
-    use 'ludovicchabant/vim-gutentags'
+    use {
+        'ludovicchabant/vim-gutentags',
+        config = function() require('plugins/vim_gutentags') end
+    }
     -- Colorscheme
     use 'joshdick/onedark.vim'
     -- Statusline
@@ -89,7 +92,8 @@ require('packer').startup(function()
     use { 'ibhagwan/fzf-lua',
         requires = {
             'kyazdani42/nvim-web-devicons'
-        } -- optional for icons
+        }, -- optional for icons
+        -- use = { 'junegunn/fzf', run = './install --bin', }
     }
 
 end
