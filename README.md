@@ -1,5 +1,7 @@
 # Neovim Configuration
 
+ - [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#linux)
+
 ## Usage
 
 ```bash
